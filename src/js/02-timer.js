@@ -11,7 +11,7 @@ const timerSeconds = document.querySelector('[data-seconds]');
 let chosenDate = 0;
 
 button.disabled = true;
-const timerId = null;
+let timerId = null;
 
 button.addEventListener('click', onStartButtonClick)
 
