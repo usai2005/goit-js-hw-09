@@ -1,7 +1,7 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
-require("flatpickr/dist/themes/material_orange.css");
+//require("flatpickr/dist/themes/material_orange.css");
 
 const button = document.querySelector('button');
 const timerDays = document.querySelector('[data-days]');
