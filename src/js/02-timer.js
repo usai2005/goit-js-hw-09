@@ -15,7 +15,7 @@ timerId = null;
 
 button.addEventListener('click', onStartButtonClick)
 
-flatpickr("#datetime-picker", {
+const fp = flatpickr("#datetime-picker", {
   enableTime: true,
   time_24hr: true,
   defaultDate: new Date(),

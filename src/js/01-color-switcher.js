@@ -6,11 +6,13 @@ let timerId = null;
 startBtn.addEventListener('click', onStartBtnCLick);
 stopBtn.addEventListener('click', onStopBtnClick);
 
+stopBtn.disabled = true;
 //actions by clicking startBtn
 
 function onStartBtnCLick() {
     
     startBtn.disabled = true;
+    stopBtn.disabled = false;
         
     body.style.backgroundColor = getRandomHexColor();
 
@@ -30,6 +32,8 @@ function onStartBtnCLick() {
 function onStopBtnClick() {
 
     clearInterval(timerId);
+
+    stopBtn.disabled = true;
 
     startBtn.disabled = false;
 };

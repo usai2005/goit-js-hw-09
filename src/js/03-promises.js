@@ -5,6 +5,8 @@ const enteredDelay = document.querySelector('[name="delay"]');
 const enteredStep = document.querySelector('[name="step"]');
 const enteredAmount = document.querySelector('[name="amount"]');
 
+//actions by submit btn clicking
+
 form.addEventListener('submit', (e) => {
   
   e.preventDefault();
@@ -12,6 +14,8 @@ form.addEventListener('submit', (e) => {
   let step = Number(enteredDelay.value);
 
   for (let i = 1; i <= Number(enteredAmount.value); i += 1) {
+    
+    //calling promise creating function and getting promise results
     
     createPromise(i, step)
       .then(({ position, delay }) => {
@@ -28,6 +32,8 @@ form.addEventListener('submit', (e) => {
     step += Number(enteredStep.value);
   };
 });
+
+//promise creating
 
 function createPromise(position, delay) { 
 
