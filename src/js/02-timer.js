@@ -1,7 +1,7 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
-//require("flatpickr/dist/themes/material_orange.css");
+require("flatpickr/dist/themes/material_orange.css");
 
 const button = document.querySelector('button');
 const timerDays = document.querySelector('[data-days]');
@@ -11,7 +11,7 @@ const timerSeconds = document.querySelector('[data-seconds]');
 let chosenDate = 0;
 
 button.disabled = true;
-timerId = null;
+const timerId = null;
 
 button.addEventListener('click', onStartButtonClick)
 
